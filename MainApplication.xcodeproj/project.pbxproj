@@ -13,7 +13,22 @@
 		402530542514BDEC0050F649 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 402530532514BDEC0050F649 /* Preview Assets.xcassets */; };
 		402530572514BDEC0050F649 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402530552514BDEC0050F649 /* Main.storyboard */; };
 		402530662514C5A60050F649 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402530652514C5A60050F649 /* AppDelegate.swift */; };
+		409CBD5E25164F4C00619FDF /* AutoLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 402530632514C5A50050F649 /* AutoLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		409CBD61251659CE00619FDF /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409CBD60251659CE00619FDF /* ServiceManagement.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		409CBD5D25164ECD00619FDF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				409CBD5E25164F4C00619FDF /* AutoLauncher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		402530492514BDD40050F649 /* MainApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MainApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,6 +43,7 @@
 		402530652514C5A60050F649 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4025306E2514C5B40050F649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4025306F2514C5B40050F649 /* AutoLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoLauncher.entitlements; sourceTree = "<group>"; };
+		409CBD60251659CE00619FDF /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				409CBD61251659CE00619FDF /* ServiceManagement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +71,7 @@
 				4025304B2514BDD40050F649 /* MainApplication */,
 				402530642514C5A60050F649 /* AutoLauncher */,
 				4025304A2514BDD40050F649 /* Products */,
+				409CBD5F251659CE00619FDF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +116,14 @@
 			path = AutoLauncher;
 			sourceTree = "<group>";
 		};
+		409CBD5F251659CE00619FDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				409CBD60251659CE00619FDF /* ServiceManagement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,6 +134,7 @@
 				402530452514BDD40050F649 /* Sources */,
 				402530462514BDD40050F649 /* Frameworks */,
 				402530472514BDD40050F649 /* Resources */,
+				409CBD5D25164ECD00619FDF /* CopyFiles */,
 			);
 			buildRules = (
 			);

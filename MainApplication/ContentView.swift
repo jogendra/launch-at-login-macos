@@ -7,11 +7,26 @@
 //
 
 import SwiftUI
+import ServiceManagement
 
 struct ContentView: View {
+    @State private var launchAtLogin = false {
+        didSet {
+            SMLoginItemSetEnabled(Constants.helperBundleID as CFString,
+                                  launchAtLogin)
+        }
+    }
+    
+    private struct Constants {
+        // Helper Application Bundle Identifier
+        static let helperBundleID = "com.jogendra.AutoLauncher"
+    }
     var body: some View {
-        Text("Hello, World!")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        VStack {
+            Toggle(isOn: $launchAtLogin) {
+                Text(" Launch at Login")
+            }
+        }.frame(width: 600, height: 350, alignment: .center)
     }
 }
 
