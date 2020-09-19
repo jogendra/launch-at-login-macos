@@ -12,6 +12,7 @@
 		402530512514BDEC0050F649 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 402530502514BDEC0050F649 /* Assets.xcassets */; };
 		402530542514BDEC0050F649 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 402530532514BDEC0050F649 /* Preview Assets.xcassets */; };
 		402530572514BDEC0050F649 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402530552514BDEC0050F649 /* Main.storyboard */; };
+		402530662514C5A60050F649 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402530652514C5A60050F649 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,10 +24,21 @@
 		402530562514BDEC0050F649 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		402530582514BDEC0050F649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		402530592514BDEC0050F649 /* MainApplication.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MainApplication.entitlements; sourceTree = "<group>"; };
+		402530632514C5A50050F649 /* AutoLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		402530652514C5A60050F649 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4025306E2514C5B40050F649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4025306F2514C5B40050F649 /* AutoLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoLauncher.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		402530462514BDD40050F649 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		402530602514C5A50050F649 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				4025304B2514BDD40050F649 /* MainApplication */,
+				402530642514C5A60050F649 /* AutoLauncher */,
 				4025304A2514BDD40050F649 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				402530492514BDD40050F649 /* MainApplication.app */,
+				402530632514C5A50050F649 /* AutoLauncher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +88,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		402530642514C5A60050F649 /* AutoLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				402530652514C5A60050F649 /* AppDelegate.swift */,
+				4025306E2514C5B40050F649 /* Info.plist */,
+				4025306F2514C5B40050F649 /* AutoLauncher.entitlements */,
+			);
+			path = AutoLauncher;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -94,6 +118,23 @@
 			productReference = 402530492514BDD40050F649 /* MainApplication.app */;
 			productType = "com.apple.product-type.application";
 		};
+		402530622514C5A50050F649 /* AutoLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 402530702514C5B40050F649 /* Build configuration list for PBXNativeTarget "AutoLauncher" */;
+			buildPhases = (
+				4025305F2514C5A50050F649 /* Sources */,
+				402530602514C5A50050F649 /* Frameworks */,
+				402530612514C5A50050F649 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoLauncher;
+			productName = AutoLauncher;
+			productReference = 402530632514C5A50050F649 /* AutoLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -105,6 +146,9 @@
 				ORGANIZATIONNAME = Jogendra;
 				TargetAttributes = {
 					402530482514BDD40050F649 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					402530622514C5A50050F649 = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
@@ -123,6 +167,7 @@
 			projectRoot = "";
 			targets = (
 				402530482514BDD40050F649 /* MainApplication */,
+				402530622514C5A50050F649 /* AutoLauncher */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +183,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		402530612514C5A50050F649 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -147,6 +199,14 @@
 			files = (
 				4025304F2514BDD40050F649 /* ContentView.swift in Sources */,
 				4025304D2514BDD40050F649 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4025305F2514C5A50050F649 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				402530662514C5A60050F649 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +379,46 @@
 			};
 			name = Release;
 		};
+		402530712514C5B40050F649 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AutoLauncher/AutoLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AutoLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jogendra.AutoLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		402530722514C5B40050F649 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AutoLauncher/AutoLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AutoLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jogendra.AutoLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -336,6 +436,15 @@
 			buildConfigurations = (
 				4025305D2514BDEC0050F649 /* Debug */,
 				4025305E2514BDEC0050F649 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		402530702514C5B40050F649 /* Build configuration list for PBXNativeTarget "AutoLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				402530712514C5B40050F649 /* Debug */,
+				402530722514C5B40050F649 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

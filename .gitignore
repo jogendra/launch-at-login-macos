@@ -1,0 +1,8 @@
+# MacOS generated files
+.DS_Store
+.DS_Store?
+
+# XCode generated files
+MainApplication.xcodeproj/project.xcworkspace/xcuserdata/*
+MainApplication.xcodeproj/xcuserdata/*
+
