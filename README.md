@@ -7,7 +7,13 @@ An example project demonstrating Launch at Login (launch application on system s
 There are a couple of ways to add a login item to the application. The most used/useful way is using the [Service Management framework](https://developer.apple.com/documentation/servicemanagement). Login items installed using the Service Management framework are not visible in System Preferences and can only be removed by the application that installed them.
 The other way is using a shared file list. Login items installed using a shared file list are visible in System Preferences; users have direct control over them. If you use this API, your login item can be disabled by the user.
 
-In this example, implemented using most used method Service Management framework. Please refer to full blog post for this example: [https://jogendra.dev/implementing-launch-at-login-feature-in-macos-apps](https://jogendra.dev/implementing-launch-at-login-feature-in-macos-apps)
+### App Sandboxing
+
+![App Sandboxing](https://user-images.githubusercontent.com/20956124/93572750-ea161780-f9b3-11ea-8f32-e94a6b5a2672.png)
+
+### Blog Post
+
+Please refer to full blog post for this example: [https://jogendra.dev/implementing-launch-at-login-feature-in-macos-apps](https://jogendra.dev/implementing-launch-at-login-feature-in-macos-apps)
 
 ## License
 
