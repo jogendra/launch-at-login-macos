@@ -15,6 +15,7 @@
 		402530662514C5A60050F649 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402530652514C5A60050F649 /* AppDelegate.swift */; };
 		409CBD5E25164F4C00619FDF /* AutoLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 402530632514C5A50050F649 /* AutoLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		409CBD61251659CE00619FDF /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409CBD60251659CE00619FDF /* ServiceManagement.framework */; };
+		40C4D79E251890BD00BBC552 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4D79D251890BD00BBC552 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +45,7 @@
 		4025306E2514C5B40050F649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4025306F2514C5B40050F649 /* AutoLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoLauncher.entitlements; sourceTree = "<group>"; };
 		409CBD60251659CE00619FDF /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		40C4D79D251890BD00BBC552 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				402530652514C5A60050F649 /* AppDelegate.swift */,
 				4025306E2514C5B40050F649 /* Info.plist */,
 				4025306F2514C5B40050F649 /* AutoLauncher.entitlements */,
+				40C4D79D251890BD00BBC552 /* main.swift */,
 			);
 			path = AutoLauncher;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40C4D79E251890BD00BBC552 /* main.swift in Sources */,
 				402530662514C5A60050F649 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
